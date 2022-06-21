@@ -2,9 +2,9 @@ import 'package:app_testing/model/tourism_place.dart';
 import 'package:flutter/material.dart';
 
 class DetailScreen extends StatefulWidget {
-  final TourismPlace place;
+  final Movie movie;
 
-  const DetailScreen({Key? key, required this.place}) : super(key: key);
+  const DetailScreen({Key? key, required this.movie}) : super(key: key);
 
   @override
   State<DetailScreen> createState() => _DetailScreenState();
@@ -55,7 +55,7 @@ class _DetailScreenState extends State<DetailScreen> {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-                    Image.asset(widget.place.imageAsset),
+                    Image.asset(widget.movie.imageAsset),
                   ],
                 ),
                 Column(
@@ -74,7 +74,7 @@ class _DetailScreenState extends State<DetailScreen> {
                       ),
                       padding: const EdgeInsets.all(12.0),
                       child: Text(
-                        widget.place.name,
+                        widget.movie.name,
                         style: const TextStyle(
                           letterSpacing: 1.5,
                           color: Colors.white,
@@ -109,7 +109,7 @@ class _DetailScreenState extends State<DetailScreen> {
                           height: 8.0,
                         ),
                         Text(
-                          widget.place.releaseDate,
+                          widget.movie.releaseDate,
                           textAlign: TextAlign.center,
                         ),
                       ],
@@ -127,7 +127,7 @@ class _DetailScreenState extends State<DetailScreen> {
                           height: 8.0,
                         ),
                         Text(
-                          widget.place.rating,
+                          widget.movie.rating,
                         ),
                       ],
                     ),
@@ -144,7 +144,7 @@ class _DetailScreenState extends State<DetailScreen> {
                           height: 8.0,
                         ),
                         Text(
-                          widget.place.popularity,
+                          widget.movie.popularity,
                         ),
                       ],
                     ),
@@ -176,7 +176,7 @@ class _DetailScreenState extends State<DetailScreen> {
                 bottom: 100.0,
               ),
               child: Text(
-                widget.place.description,
+                widget.movie.description,
                 textAlign: TextAlign.justify,
                 style: const TextStyle(
                   fontSize: 16,

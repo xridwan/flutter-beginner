@@ -16,13 +16,13 @@ class MainScreen extends StatelessWidget {
         padding: const EdgeInsets.all(4.0),
         child: ListView.builder(
           itemBuilder: (context, index) {
-            final TourismPlace place = tourismPlaceList[index];
+            final Movie movie = movieList[index];
             return InkWell(
                 onTap: () {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => DetailScreen(place: place)));
+                          builder: (context) => DetailScreen(movie: movie)));
                 },
                 child: Card(
                   child: Stack(
@@ -32,7 +32,7 @@ class MainScreen extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: [
                               Image.asset(
-                                place.imageAsset,
+                                movie.imageAsset,
                                 height: 200,
                                 fit: BoxFit.cover,
                               ),
@@ -53,7 +53,7 @@ class MainScreen extends StatelessWidget {
                               ),
                               padding: const EdgeInsets.all(12.0),
                               child: Text(
-                                place.name,
+                                movie.name,
                                 style: const TextStyle(
                                   letterSpacing: 1.5,
                                   color: Colors.white,
@@ -68,7 +68,7 @@ class MainScreen extends StatelessWidget {
                       ]),
                 ));
           },
-          itemCount: tourismPlaceList.length,
+          itemCount: movieList.length,
         ),
       ),
     );
