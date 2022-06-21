@@ -163,7 +163,7 @@ class _DetailScreenState extends State<DetailScreen> {
                 "Review",
                 textAlign: TextAlign.start,
                 style: TextStyle(
-                  fontSize: 20.0,
+                  fontSize: 20.0,//
                   fontWeight: FontWeight.bold,
                 ),
               ),
