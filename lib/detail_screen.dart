@@ -1,4 +1,4 @@
-import 'package:app_testing/model/tourism_place.dart';
+import 'package:app_testing/model/movie.dart';
 import 'package:flutter/material.dart';
 
 class DetailScreen extends StatefulWidget {

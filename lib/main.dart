@@ -39,7 +39,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.brown,
+      color: Colors.blue,
       child: Padding(
         padding: const EdgeInsets.all(24.0),
         child: FlutterLogo(
