@@ -13,7 +13,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Movie App",
-      theme: ThemeData(fontFamily: 'Jost', primarySwatch: Colors.brown),
+      theme: ThemeData(
+        fontFamily: 'Jost',
+        primarySwatch: Colors.brown,
+      ),
       home: const SplashScreen(),
     );
   }
